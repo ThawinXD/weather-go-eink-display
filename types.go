@@ -36,6 +36,10 @@ type GoogleWeatherResponse struct {
 	ForecastHours []GoogleForecastHour `json:"forecastHours"`
 }
 
+type GoogleHistoryResponse struct {
+	HistoryHours []GoogleForecastHour `json:"historyHours"`
+}
+
 type GoogleForecastHour struct {
 	Interval struct {
 		StartTime time.Time `json:"startTime"`
